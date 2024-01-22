@@ -1,18 +1,16 @@
-package mass;
-
-public enum Unit {
+public enum MassUnit implements Unit{
     MG(1),
     G(1000),
     KG(1000_000);
     private final int fact;
-    Unit(int fact) {
+    MassUnit(int fact) {
         this.fact = fact;
     }
-    double convertToMG(double val) {
+    public double convertToBase(double val) {
         return val * fact;
     }
 
-    double convertFromMG(double val) {
+    public double convertFromBase(double val) {
         return val / fact;
     }
 }

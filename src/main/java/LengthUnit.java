@@ -1,19 +1,19 @@
-package length;
 
-public enum Unit {
+
+public enum LengthUnit implements Unit{
     MM(1),
     CM(10),
     M(1000),
     KM(1_000_000);
     private final int fact;
-    Unit(int fact) {
+    LengthUnit(int fact) {
         this.fact = fact;
     }
-    double convertToMM(double val) {
+    public double convertToBase(double val) {
         return val * fact;
     }
 
-    double convertFromMM(double val) {
+    public double convertFromBase(double val) {
         return val / fact;
     }
 }
