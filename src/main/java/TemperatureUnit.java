@@ -1,4 +1,4 @@
-public enum TemperatureUnit {
+public enum TemperatureUnit implements Unit{
     K(1, 273.15),
     C(1),
     F(5.0 / 9.0, 32);

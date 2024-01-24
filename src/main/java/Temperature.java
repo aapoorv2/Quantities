@@ -1,7 +1,8 @@
-public class Temperature {
+public class Temperature extends Quantity{
     private double value;
     private TemperatureUnit unit;
     Temperature(double value, TemperatureUnit unit) {
+        super(value, unit);
         this.value = value;
         this.unit = unit;
     }

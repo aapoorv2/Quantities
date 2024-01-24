@@ -1,4 +1,4 @@
-public class Mass extends Quantity{
+public class Mass extends AddableQuantity{
     public Mass(double value, MassUnit unit) {
         super(value, unit);
     }
